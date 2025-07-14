@@ -17,5 +17,5 @@ def send_email(subject, sender, recipients, body, from_email):
 
     with smtplib.SMTP(smtp_server, smtp_port) as server:
         server.starttls()
-        server.login('austinlgreentx@gmail.com', 'fctv ppei fzxt uspv')
+        server.login('{insert email}', 'code')
         server.sendmail(sender, ', '.join(recipients), msg.as_string())
