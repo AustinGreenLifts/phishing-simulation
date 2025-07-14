@@ -25,7 +25,7 @@ def send_phishing_email():
     subject = "Phishing Simulation"
     body = generate_phishing_email('Employee')  # Generate email content
 
-    send_email(subject, 'Trevor Poe', [recipient], body)  # Send email
+    send_email(subject, sender, [recipient], body)  # Send email
     return f"Phishing email sent to {recipient}!"
 
 if __name__ == '__main__':
